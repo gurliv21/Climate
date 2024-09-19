@@ -1,5 +1,5 @@
 import { Button } from '@mantine/core'
-import React from 'react'
+
 import Particles from "@/components/magicui/particles";
 import ShinyButton from "@/components/magicui/shiny-button";
 import {  useNavigate } from 'react-router-dom';

@@ -6,7 +6,7 @@ import Draggable from 'react-draggable'
 import axios from 'axios';
 
 interface Response {
-    exp: string;
+    expr: string;
     result: string;
     assign: boolean;
 }
