@@ -1,11 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-@layer base {
-  :root {
-    --radius: 0.5rem;
+.border-color-text {
+  background: linear-gradient(90deg, 
+      rgba(2, 103, 255, 0.95) 0%,      /* Dark Blue */
+      rgb(66, 154, 226) 50%,     /* Sky Blue */
+      rgb(155, 207, 255) 100%    /* Lighter Blue */
+  );
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+@keyframes shineAnimation {
+  0% {
+    --x: 100%;
+    transform: scale(0.8);
   }
+  50% {
+    --x: 0%;
+    transform: scale(1);
+  }
+  100% {
+    --x: -100%;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.shiny-button:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
