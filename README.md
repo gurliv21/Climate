@@ -6,7 +6,7 @@ This is a React-based web application that allows users to draw mathematical exp
 
 ### Live Demo
 
-Check out the live version of this project here: [Eclipse AI Live](https://notes-ai-nine.vercel.app)
+Check out the live version of this project here: [NotesAi AI Live](https://notes-ai-nine.vercel.app)
 ## Features
 
 - **Interactive Canvas**: Users can draw mathematical expressions directly on a canvas.
