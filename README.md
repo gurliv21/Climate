@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# NOTESAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a React-based web application that allows users to draw mathematical expressions on a canvas and process them to obtain results using a backend API. It features a color selection tool for drawing and integrates with MathJax to render mathematical notation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Live Demo
 
-## Expanding the ESLint configuration
+Check out the live version of this project here: [NotesAi AI Live](https://notes-ai-nine.vercel.app)
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Interactive Canvas**: Users can draw mathematical expressions directly on a canvas.
+- **Color Selection**: A color palette allows users to choose different colors for drawing.
+- **Dynamic Result Display**: The application sends the drawn content to the backend for processing and displays the results.
+- **MathJax Integration**: Renders mathematical expressions beautifully using MathJax.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: JavaScript library for building user interfaces.
+- **Mantine**: A component library for React with a focus on usability and accessibility.
+- **axios**: For making HTTP requests to the backend.
+- **MathJax**: For rendering LaTeX mathematical notation.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Prerequisites
+
+- Node.js (>= 14.x)
+- npm (>= 5.x)
