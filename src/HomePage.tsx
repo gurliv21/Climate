@@ -33,7 +33,7 @@ function HomePage() {
           </span>
           {/* For small screens */}
           <span className="sm:hidden text-lg ">
-          <span className='border-color-text ' >Transform your sketches into answers with AI draw anything and get instant solutions!!</span>
+          <span className='border-color-text ' >Transform your sketches into answers  draw anything and get instant solutions!!</span>
           </span>
         </h1>
         <p className="text-gray-400 text-sm lg:px-80 p-6">
@@ -45,7 +45,9 @@ function HomePage() {
           </span>
           {/* For small screens */}
           <span className="sm:hidden text-xs ">
-            Bring Your Imagination to Life Draw,<br /> Sketch, and Let Our AI Reveal the Answers
+            
+            Bring Your Imagination to Life Draw,<br/> Sketch, and Let Our AI Reveal the Answers
+            
           </span>
         </p>
 

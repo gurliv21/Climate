@@ -12,6 +12,7 @@
     background-clip: text;
     text-fill-color: transparent;
 }
+
 @keyframes shineAnimation {
   0% {
     --x: 100%;
