@@ -45,3 +45,85 @@
 .shiny-button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Blue Theme */
+/* Blue Theme */
+@layer base {
+  :root {
+    --background: 210 33% 96%; /* Light Blue Background */
+    --foreground: 220 15% 20%; /* Darker Blue Text */
+    --card: 210 33% 96%; /* Light Blue for Cards */
+    --card-foreground: 220 15% 20%; /* Dark Blue Text */
+    --popover: 210 33% 96%; /* Light Blue Popover */
+    --popover-foreground: 220 15% 20%; /* Dark Blue Text */
+    --primary: 220 100% 50%; /* Bright Blue Primary */
+    --primary-foreground: 0 0% 98%; /* White Text */
+    --secondary: 210 60% 90%; /* Soft Light Blue */
+    --secondary-foreground: 220 15% 20%; /* Dark Blue Text */
+    --muted: 210 60% 90%; /* Muted Light Blue */
+    --muted-foreground: 220 30% 40%; /* Mid Blue Text */
+    --accent: 220 100% 50%; /* Bright Blue Accent */
+    --accent-foreground: 0 0% 98%; /* White Text */
+    --destructive: 0 84.2% 60.2%; /* Keep Red for Destructive Actions */
+    --destructive-foreground: 0 0% 98%; /* White Text */
+    --border: 220 30% 80%; /* Light Blue Border */
+    --input: 220 30% 80%; /* Light Blue Input */
+    --ring: 220 100% 50%; /* Bright Blue Ring */
+
+    /* Chart Colors */
+    --chart-1: 210 100% 56%; /* Blue Chart Color */
+    --chart-2: 190 90% 50%; /* Light Blue Chart */
+    --chart-3: 200 80% 45%; /* Mid Blue Chart */
+    --chart-4: 220 75% 55%; /* Bright Blue Chart */
+    --chart-5: 240 85% 60%; /* Vibrant Blue Chart */
+    --chart-6: 50 100% 50%; /* Bright Yellow Chart */
+    --chart-7: 120 100% 40%; /* Dark Green Chart */
+    --chart-8: 60 100% 50%; /* Bright Green Chart */
+    --chart-9: 30 100% 50%; /* Bright Orange Chart */
+    --chart-10: 0 100% 50%; /* Bright Red Chart */
+    --chart-11: 45 100% 50%; /* Golden Yellow Chart */
+    --chart-12: 240 100% 40%; /* Deep Blue Chart */
+  }
+
+  .dark {
+    --background: 220 30% 15%; /* Dark Blue Background */
+    --foreground: 210 15% 95%; /* White Text */
+    --card: 220 30% 15%; /* Dark Blue for Cards */
+    --card-foreground: 210 15% 95%; /* White Text */
+    --popover: 220 30% 15%; /* Dark Blue Popover */
+    --popover-foreground: 210 15% 95%; /* White Text */
+    --primary: 210 80% 50%; /* Bright Blue Primary */
+    --primary-foreground: 210 15% 95%; /* White Text */
+    --secondary: 220 25% 20%; /* Soft Dark Blue */
+    --secondary-foreground: 210 15% 95%; /* White Text */
+    --muted: 220 25% 20%; /* Muted Dark Blue */
+    --muted-foreground: 210 40% 70%; /* Lighter Blue Text */
+    --accent: 210 80% 50%; /* Bright Blue Accent */
+    --accent-foreground: 210 15% 95%; /* White Text */
+    --destructive: 0 62.8% 30.6%; /* Keep Red for Destructive Actions */
+    --destructive-foreground: 210 15% 95%; /* White Text */
+    --border: 220 25% 20%; /* Dark Blue Border */
+    --input: 220 25% 20%; /* Dark Blue Input */
+    --ring: 210 80% 50%; /* Bright Blue Ring */
+
+    /* Dark Chart Colors */
+    --chart-1: 210 100% 60%; /* Blue Chart Color */
+    --chart-2: 190 80% 45%; /* Light Blue Chart */
+    --chart-3: 200 70% 50%; /* Mid Blue Chart */
+    --chart-4: 220 75% 55%; /* Bright Blue Chart */
+    --chart-5: 240 85% 60%; /* Vibrant Blue Chart */
+    --chart-6: 50 100% 50%; /* Bright Yellow Chart */
+    --chart-7: 120 100% 40%; /* Dark Green Chart */
+    --chart-8: 60 100% 50%; /* Bright Green Chart */
+    --chart-9: 30 100% 50%; /* Bright Orange Chart */
+    --chart-10: 0 100% 50%; /* Bright Red Chart */
+    --chart-11: 45 100% 50%; /* Golden Yellow Chart */
+    --chart-12: 240 100% 40%; /* Deep Blue Chart */
+  }
+}
+
+@media (max-width: 640px) {
+  .text-xl {
+    font-size: 1.25rem; /* Smaller font size for smaller screens */
+  }
+}

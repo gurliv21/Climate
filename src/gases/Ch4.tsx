@@ -1,4 +1,4 @@
-import React from 'react'
+
 "use client";
 import { TrendingUp } from "lucide-react";
 import { CartesianGrid, LabelList, Line, LineChart, XAxis } from "recharts";
@@ -17,39 +17,37 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-// CO₂ usage data from 2012 to 2024
+// CH₄ usage data from 2012 to 2024
 const chartData = [
-  { year: "2012", co2: 35 },
-  { year: "2013", co2: 36 },
-  { year: "2014", co2: 34 },
-  { year: "2015", co2: 37 },
-  { year: "2016", co2: 38 },
-  { year: "2017", co2: 39 },
-  { year: "2018", co2: 40 },
-  { year: "2019", co2: 41 },
-  { year: "2020", co2: 42 },
-  { year: "2021", co2: 43 },
-  { year: "2022", co2: 45 },
-  { year: "2023", co2: 47 },
-  { year: "2024", co2: 49 },
+  { year: "2012", ch4: 25 },
+  { year: "2013", ch4: 26 },
+  { year: "2014", ch4: 27 },
+  { year: "2015", ch4: 29 },
+  { year: "2016", ch4: 30 },
+  { year: "2017", ch4: 31 },
+  { year: "2018", ch4: 33 },
+  { year: "2019", ch4: 34 },
+  { year: "2020", ch4: 36 },
+  { year: "2021", ch4: 38 },
+  { year: "2022", ch4: 39 },
+  { year: "2023", ch4: 41 },
+  { year: "2024", ch4: 43 },
 ];
 
-// Configuring the chart for CO₂ emissions
+// Configuring the chart for CH₄ emissions
 const chartConfig = {
-  co2: {
-    label: "CO₂ Emissions (in Gigatonnes)",
-    color: "hsl(var(--chart-1))",
+  ch4: {
+    label: "CH₄ Emissions (in Gigatonnes)",
+    color: "hsl(var(--chart-9))", // Change this to a suitable color for CH₄
   },
 } satisfies ChartConfig;
 
-
-function Co() {
+function Ch4() {
   return (
-    <div>
-        <div className="dark"> {/* Adding the dark class */}
+    <div className="dark"> {/* Adding the dark class */}
       <Card>
         <CardHeader>
-          <CardTitle>CO₂ Emissions Over the Years</CardTitle>
+          <CardTitle>CH₄ Emissions Over the Years</CardTitle>
           <CardDescription>2012 - 2024</CardDescription>
         </CardHeader>
         <CardContent>
@@ -77,12 +75,12 @@ function Co() {
                 content={<ChartTooltipContent indicator="line" />}
               />
               <Line
-                dataKey="co2"
+                dataKey="ch4"
                 type="natural"
-                stroke="hsl(var(--chart-1))"
+                stroke="hsl(var(--chart-9))" // Color for CH₄ line
                 strokeWidth={2}
                 dot={{
-                  fill: "hsl(var(--chart-1))",
+                  fill: "hsl(var(--chart-9))", // Color for CH₄ dot
                 }}
                 activeDot={{
                   r: 6,
@@ -100,18 +98,16 @@ function Co() {
         </CardContent>
         <CardFooter className="flex-col items-start gap-2 text-sm">
           <div className="flex gap-2 font-medium leading-none">
-            CO₂ Emissions have increased by 4.2% in the last year{" "}
+            CH₄ Emissions have increased by 5.1% in the last year{" "}
             <TrendingUp className="h-4 w-4" />
           </div>
           <div className="leading-none text-muted-foreground">
-            Showing CO₂ emissions in gigatonnes from 2012 to 2024
+            Showing CH₄ emissions in gigatonnes from 2012 to 2024
           </div>
         </CardFooter>
       </Card>
     </div>
-      
-    </div>
-  )
+  );
 }
 
-export default Co
+export default Ch4;

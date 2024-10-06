@@ -17,39 +17,37 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-// CO₂ usage data from 2012 to 2024
+// SO₂ usage data from 2012 to 2024
 const chartData = [
-  { year: "2012", co2: 35 },
-  { year: "2013", co2: 36 },
-  { year: "2014", co2: 34 },
-  { year: "2015", co2: 37 },
-  { year: "2016", co2: 38 },
-  { year: "2017", co2: 39 },
-  { year: "2018", co2: 40 },
-  { year: "2019", co2: 41 },
-  { year: "2020", co2: 42 },
-  { year: "2021", co2: 43 },
-  { year: "2022", co2: 45 },
-  { year: "2023", co2: 47 },
-  { year: "2024", co2: 49 },
+  { year: "2012", so2: 20 },
+  { year: "2013", so2: 22 },
+  { year: "2014", so2: 21 },
+  { year: "2015", so2: 23 },
+  { year: "2016", so2: 25 },
+  { year: "2017", so2: 24 },
+  { year: "2018", so2: 26 },
+  { year: "2019", so2: 27 },
+  { year: "2020", so2: 28 },
+  { year: "2021", so2: 30 },
+  { year: "2022", so2: 31 },
+  { year: "2023", so2: 33 },
+  { year: "2024", so2: 35 },
 ];
 
-// Configuring the chart for CO₂ emissions
+// Configuring the chart for SO₂ emissions
 const chartConfig = {
-  co2: {
-    label: "CO₂ Emissions (in Gigatonnes)",
-    color: "hsl(var(--chart-1))",
+  so2: {
+    label: "SO₂ Emissions (in Gigatonnes)",
+    color: "hsl(var(--chart-2))", // Change this to a suitable color for SO₂
   },
 } satisfies ChartConfig;
 
-
-function Co() {
+function So() {
   return (
-    <div>
-        <div className="dark"> {/* Adding the dark class */}
+    <div className="dark"> {/* Adding the dark class */}
       <Card>
         <CardHeader>
-          <CardTitle>CO₂ Emissions Over the Years</CardTitle>
+          <CardTitle>SO₂ Emissions Over the Years</CardTitle>
           <CardDescription>2012 - 2024</CardDescription>
         </CardHeader>
         <CardContent>
@@ -77,12 +75,12 @@ function Co() {
                 content={<ChartTooltipContent indicator="line" />}
               />
               <Line
-                dataKey="co2"
+                dataKey="so2"
                 type="natural"
-                stroke="hsl(var(--chart-1))"
+                stroke="hsl(var(--chart-2))" // Color for SO₂ line
                 strokeWidth={2}
                 dot={{
-                  fill: "hsl(var(--chart-1))",
+                  fill: "hsl(var(--chart-2))", // Color for SO₂ dot
                 }}
                 activeDot={{
                   r: 6,
@@ -100,18 +98,16 @@ function Co() {
         </CardContent>
         <CardFooter className="flex-col items-start gap-2 text-sm">
           <div className="flex gap-2 font-medium leading-none">
-            CO₂ Emissions have increased by 4.2% in the last year{" "}
+            SO₂ Emissions have increased by 6.5% in the last year{" "}
             <TrendingUp className="h-4 w-4" />
           </div>
           <div className="leading-none text-muted-foreground">
-            Showing CO₂ emissions in gigatonnes from 2012 to 2024
+            Showing SO₂ emissions in gigatonnes from 2012 to 2024
           </div>
         </CardFooter>
       </Card>
     </div>
-      
-    </div>
-  )
+  );
 }
 
-export default Co
+export default So;
