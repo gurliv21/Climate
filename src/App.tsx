@@ -3,8 +3,9 @@ import '@mantine/core/styles.css';
 import './index.css';
 import { MantineProvider } from '@mantine/core';
 
-import Home from "./Home";
+
 import HomePage from "./HomePage";
+import Climate from "./Climate";
 
 const router = createBrowserRouter([
   {
@@ -12,9 +13,9 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: '/Home',
-    element: <Home />,
-  },
+    path: '/Climate',
+    element: <Climate/>,
+  }
 ]);
 
 function App() {
