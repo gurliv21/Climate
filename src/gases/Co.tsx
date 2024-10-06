@@ -1,4 +1,4 @@
-import React from 'react'
+
 "use client"
 import { TrendingUp } from "lucide-react"
 import { CartesianGrid, LabelList, Line, LineChart, XAxis } from "recharts"

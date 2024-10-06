@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Slider } from '@/components/ui/slider';
 import Co from '@/gases/Co.tsx'
 // Paths for the 7 phases of the tree decomposition
