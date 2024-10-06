@@ -40,7 +40,7 @@ function Climate() {
 
   // Convert slider value to ppm (0-100 mapped to 0-1000 ppm)
   const ppmValue = (sliderValue / 100) * 1000;
-  const { level, impact } = getGasLevelDescription(sliderValue);
+  const {  impact } = getGasLevelDescription(sliderValue);
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen w-screen p-8 ">
