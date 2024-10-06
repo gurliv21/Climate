@@ -45,9 +45,9 @@ function Climate() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen w-screen p-8 ">
       <Change />
-      <div className="border rounded-2xl p-10 px-8  shadow-lg w-full max-w-4xl flex flex-col text-center" style={{ backgroundColor: 'rgba(232, 234, 237, 0.09)' }}>
-        <h1 className="text-4xl font-bold mb-2 text-white">Effects on Tree Health</h1>
-        <h2 className="text-lg mb-6 text-white">Understanding the Impact of Gas Levels</h2>
+      <div className="border rounded-2xl p-8 px-14  shadow-lg w-full max-w-4xl flex flex-col  bg-gray-950 opacity-100 text-center " >
+        <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-2 text-white">Effects on Tree Health</h1>
+        <h2 className="text-sm md:text-lg lg:text-lg mb-6 text-white">Understanding the Impact of Gas Levels</h2>
 
         <div>
           {/* Slider for controlling gas levels in ppm */}
@@ -67,16 +67,14 @@ function Climate() {
           <p className="text-white text-sm">{impact}</p>
 
           {/* Image displaying the decomposition phase based on the slider value */}
-          <div className="mb-8 flex text-center justify-center">
+          <div className="mb-8 flex text-center justify-center ">
             <img
               src={imagePaths[getImageIndex(sliderValue)]}
               alt={`Phase ${getImageIndex(sliderValue) + 1} of Tree`}
               className="max-w-full h-auto rounded-xl shadow-lg"
             />
           </div>
-          <p className="text-white text-sm">
-            This image represents how trees are affected by varying levels of different gases in the atmosphere. As gas levels increase, tree health may decline, leading to various visual changes.
-          </p>
+          
         </div>
       </div>
     </div>

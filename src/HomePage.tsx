@@ -25,10 +25,10 @@ function HomePage() {
         refresh
       />
     <div className="relative flex flex-col size-full h-screen w-screen items-center justify-center overflow-hidden rounded-lg border bg-background px-40 pb-40 pt-8 md:pb-60 md:shadow-xl">
-  <span className="m-3 pointer-events-none absolute top-20 whitespace-pre-wrap bg-gradient-to-b from-gray-700 to-gray-300/80 bg-clip-text text-center text-5xl md:text-6xl lg:text-6xlfont-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10 ">
+  <span className="m-3 pointer-events-none absolute top-24 whitespace-pre-wrap bg-gradient-to-b from-gray-700 to-gray-300/80 bg-clip-text text-center text-5xl md:text-7xl lg:text-7xlfont-bold leading-none text-transparent dark:from-white dark:to-slate-900/10 ">
   Visualizing Climate Change Effects on Ecosystems
   </span>
-  <div className="flex text-centers m-12 ">
+  <div className="flex text-centers m-2  ">
   <Button className="bg-white text-black font-bold " onClick={handleClick}>GET STARTED</Button>
   </div>
   <Globe className="top-96" />

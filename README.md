@@ -1,29 +1,21 @@
-# NOTESAI
-
-## Overview
-
-This is a React-based web application that allows users to draw mathematical expressions on a canvas and process them to obtain results using a backend API. It features a color selection tool for drawing and integrates with MathJax to render mathematical notation.
+#  🌍 Visualizing Climate Change Effects on Tree Health
+An interactive web application that demonstrates the impact of greenhouse gas levels on tree health. Using dynamic images and a slider control, users can observe how increasing concentrations of gases like CO₂, N₂O, CH₄, and NOₓ affect the phases of tree decomposition. This project aims to raise awareness about climate change and educate users on the detrimental effects of air pollution.
 
 ### Live Demo
 
-Check out the live version of this project here: [NotesAi AI Live](https://notes-ai-nine.vercel.app)
-## Features
+Check out the live version of this project here: [Climate Change Visualization Live](https://climate-opal.vercel.app)
+## 🚀 Features
 
-- **Interactive Canvas**: Users can draw mathematical expressions directly on a canvas.
-- **Color Selection**: A color palette allows users to choose different colors for drawing.
-- **Dynamic Result Display**: The application sends the drawn content to the backend for processing and displays the results.
-- **MathJax Integration**: Renders mathematical expressions beautifully using MathJax.
-
+- **Slider Control:**: Users can adjust gas levels between 0 ppm and 1000 ppm to simulate real-world gas concentrations.
+- **Tree Health Visualization:**: Seven images representing different phases of tree decomposition dynamically update as gas levels change.
+- **Educational Feedback:**:  Provides real-time feedback on the gas concentration level, phase of tree decomposition, and the impact on tree health.
+- **Responsive Design:**:The application is fully responsive and works across different devices and screen sizes.
 ## Technologies Used
 
 - **React**: JavaScript library for building user interfaces.
-- **Mantine**: A component library for React with a focus on usability and accessibility.
-- **axios**: For making HTTP requests to the backend.
-- **MathJax**: For rendering LaTeX mathematical notation.
+- **TypeScript:**: Adds type safety and improves code quality.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Vite:**: For fast and optimized development builds.
 
 
 
-### Prerequisites
-
-- Node.js (>= 14.x)
-- npm (>= 5.x)
